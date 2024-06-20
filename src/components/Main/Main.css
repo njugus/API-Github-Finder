@@ -1,0 +1,109 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.left-content {
+  width: 20rem;
+  height: 100vh;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  padding: 1.5rem;
+}
+.right-content {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 3rem;
+}
+.loading-message {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.error-message {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.profile-img {
+  --size: 17rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 10px;
+}
+.profile-link {
+  width: 100%;
+  font-size: 1rem;
+  background-color: #070f2b;
+  color: #ccd2da;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.repository-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.repos {
+  border: 2px solid green;
+  background-color: #f1f1e6;
+  width: 25rem;
+  height: 20vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.repos-bottom {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff7d6;
+}
+.repos-bottom svg {
+  --size: 1rem;
+  width: var(--size);
+  height: var(--size);
+}
+.follower-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid green;
+}
+.following-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
+}
+.follower-img {
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+}
+.following-img {
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+}
+.github-user {
+  font-style: none;
+  text-decoration: none;
+  background-color: #070f2b;
+  color: #ccd2da;
+  text-decoration: solid;
+  min-width: 13rem;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
